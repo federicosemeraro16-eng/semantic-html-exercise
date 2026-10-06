@@ -12,6 +12,7 @@
     <nav>
     <ul>
       <li><a href="javascript:void(0)">Chi Sono</a></li>
+      <li><a href="javascript:void(0)">Esperienze</a></li>
       <li><a href="javascript:void(0)">Competenze</a></li>
       <li><a href="javascript:void(0)">Progetti</a></li>
       <li><a href="javascript:void(0)">Contatti</a></li>
@@ -20,40 +21,171 @@
   </header>
   <hr>
   <main>
-    <h2>Chi Sono</h2>
-    <p> MI ciamo Mario rossi e sto imparando a programmare. Studio sviluppo wen con <strong>Epicode</strong> ed ogni giorno aggiungo qualcosa di nuovo a questa pagina. MI piace lavorare in gruppo, leggere documentazione tecnica e capire come funzionano le cose</p>
-  <p>Vivo a Milano. Ho una formazione precedete in <i>lettere</i> ed ora sto cambiando settore. Cerco un primo ruolo come sviluppatore frontend</p>
 
-<h2>Competenze</h2>
-<p> Le tecnologie che vedo durante le prime settimane di corso</p>
-<ul>
-  <li>HTML - struttura delle pagine</li>
-  <li>CSS - Stile ed impaginazione</li>
-  <li>Git e Github - versionamento del codice</li>
-  <li>Visual Studio Code - editor di lavoro</li>
-</ul>
+    <section id="intro-section">
+      <h2>Chi Sono</h2>
+      <div>
+        <img src="https://placehold.co/200x200" alt="Foto-Profilo"/>
+      </div>
+      <div>
+        <p> Mi chamo Mario rossi e sto imparando a programmare. Studio sviluppo web con <strong>Epicode</strong> ed ogni giorno aggiungo qualcosa di nuovo a questa pagina. MI piace lavorare in gruppo, leggere documentazione tecnica e capire come funzionano le cose</p>
+        <p>Vivo a Milano. Ho una formazione precedete in <i>lettere</i> ed ora sto cambiando settore. Cerco un primo ruolo come sviluppatore frontend</p>
+      </div>
+    </section>
 
-<h2>Progetti</h2>
-<p>I lavori fatti durante le prime settimane di corso</p>
+    <section>
+      <div>
+        <h2>Competenze</h2>
+        <p> Le tecnologie che vedo durante le prime settimane di corso</p>
+      </div>
+      <div> 
+        <ul>
+          <li>HTML - struttura delle pagine</li>
+          <li>CSS - Stile ed impaginazione</li>
+          <li>Git e Github - versionamento del codice</li>
+          <li>Visual Studio Code - editor di lavoro</li>
+        </ul>
+      </div>
+    </section>
 
-<h3>Pagina ricetta</h3>
-<p>Una pagina con titolo,ingredienti e procedura. Esercizio di markup semantico applicato ad un contenuto reale.</p>
-<a href="javascript:void(0)">Vedi su Github</a>
+  <section>
+    <div>
+      <h2>Esperienze</h2>
+      <p>Un riepilogo del mio percorso formativo e lavorativo di recente</p>
+    </div>
+    <table>
+    <caption>Esperienze formative e lavorative</caption>
+      <thead>
+        <tr>
+          <th>Anno</th>
+          <th>Ruolo</th>
+          <th>Azienda / Scuola</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2026</td>
+          <td >Studente Full-stack</td>
+          <td>Epicode</td>
+        <tr>
+          <td>2014 / 2025</td>
+          <td>Customer Success Manager</br> Billing Specialist</td>
+          <td>Quandoo Italy s.r.l.</td>
+        </tr>
+    </tbody>
+  </table>
+  <br> 
+    <div>
+        <a href="#intro-section">Torna alla sezione introduttiva</a>
+    </div>
+  </section>
+  <section>
+    <h2>Progetti</h2>
+    <p>I lavori fatti durante le prime settimane di corso</p>
 
-<h3>Card di presentazione</h3>
-<p>Un biglietto digitale con nome, ruolo e link ai social. Esercizio di sintesi sulla struttura HTML</p>
+    <h3>Pagina ricetta</h3>
+    <p>Una pagina con titolo,ingredienti e procedura. Esercizio di markup semantico applicato ad un contenuto reale.</p>
+    <div>
+        <a href="#intro-section">Torna alla sezione introduttiva</a>
+        <a href="javascript:void(0)">Vedi su Github</a>
+    </div>
+  </section>
 </main>
+
+<aside>
+    <h3>Card di presentazione</h3>
+    <p>Un biglietto digitale con nome, ruolo e link ai social. Esercizio di sintesi sulla struttura HTML</p>
+</aside>
+
+<section>
+    <h2>Contatti</h2>
+      <p>Compila il form per scrivermi. Ti rispondo in 24 ore.</p>
+        <form>
+          <fieldset>
+              <legend>Form di contatto</legend>
+              <div>
+                  <label for="nameField">Nome:</label>
+                  <br>
+                    <input
+                    type="text"
+                    placeholder="il tuo nome"
+                    title="il tuo nome"
+                    id="nameField"
+                    name="nameField"
+                    required>  
+              </div>
+            <br>
+              <div>
+                    <label for="emailField">Email:</label>
+                    <br>
+                    <input
+                    type="email"
+                    name="emailField"
+                    id="emailField"
+                    placeholder="Inserisci la tua email"
+                    title="Inserisci la tua email"
+                    required>
+              </div>
+            <br>
+              <div>
+                    <label for="reasonContact">Motivo del contatto:</label>
+                    <br>
+                    <select>
+                      <option></option>
+                      <option>Proposta di Lavoro</option>
+                      <option>Collaborazione Freelance</option>
+                      <option>Quattro chiacchiere</option>
+                    </select>
+              <div>
+            <br>
+              <div>
+                    <label for="dateField">Data preferita per la risposta:</label>
+                    <br>
+                    <input
+                    type="date"
+                    required
+                    name="dateField"
+                    title="Inserisci la data desiderata"
+                    id="dateField"
+                    />
+              </div>
+                <br>
+              <div>
+
+                    <label for="reasonCall">Messaggio:</label>
+                    <br>
+                    <textarea
+                    placeholder="scrivi qui il tuo messaggio"
+                    rows="4"
+                    cols="26"
+                    id="reasonCall"
+                    name="reasonCall"
+                    title="Inserisci qui il motivo della tua richiesta di contatto"
+                    required></textarea>
+              </div>
+                <br>
+              <div>
+                    <input
+                    type="checkbox"
+                    name="acceptTerms"
+                    id="acceptTerms"
+                    title="Si prega di accettare i termini">
+                    <label for="acceptTerms">Accetto di essere ricontattato:</label>
+              </div>
+                <br>
+              <div>
+                    <button type="buttone">Invia</button>
+              <div>
+          </fieldset>
+        </form>
+      <br>
+      <div>
+        <a href="#intro-section">Torna alla sezione introduttiva</a>
+    </div>
+</section>
+
 <footer>
-<h2>Contatti</h2>
-<p>Sono presente su queste puattaforme professionali, dove puoi seguire i miei progetti e contattarmi.</p>
-<p> Profilo Github :</p>
-<a href="javascript:void(0)">github.com/mariorossi</a>
-<p> Profilo Linkedin :</p>
-<a href="javascript:void(0)">linkedin.com/mariorossi</a>
-</footer>
-
-
-
-  
+  <p>&copy;2026 Mario Rossi</p>
+</footer> 
 </body>
 </html>
